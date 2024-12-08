@@ -462,41 +462,43 @@ class RadioCard<T extends RadioCardInfo> extends StatelessWidget {
                       duration: _duration,
                       crossFadeState: _effectiveCrossFadeState,
                       firstChild: const SizedBox(width: double.infinity),
-                      secondChild: Padding(
-                        padding: const EdgeInsets.only(top: 30.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: value.features
-                              .map(
-                                (feature) => Padding(
-                                  padding: const EdgeInsets.only(top: 10.0),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        width: 7,
-                                        height: 7,
-                                        decoration: const BoxDecoration(
-                                          color: Colors.white,
-                                          shape: BoxShape.circle,
+                      secondChild: SingleChildScrollView(
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 30.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: value.features
+                                .map(
+                                  (feature) => Padding(
+                                    padding: const EdgeInsets.only(top: 10.0),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          width: 7,
+                                          height: 7,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.white,
+                                            shape: BoxShape.circle,
+                                          ),
                                         ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      Text(
-                                        feature,
-                                        overflow: TextOverflow.fade,
-                                        style: const TextStyle(
-                                          fontFamily: kFontFamily,
-                                          color: Colors.white,
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w500,
+                                        const SizedBox(width: 10),
+                                        Text(
+                                          feature,
+                                          overflow: TextOverflow.fade,
+                                          style: const TextStyle(
+                                            fontFamily: kFontFamily,
+                                            color: Colors.white,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                         ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              )
-                              .toList(),
+                                )
+                                .toList(),
+                          ),
                         ),
                       ),
                     ),
