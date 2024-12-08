@@ -1,0 +1,53 @@
+name: test_case_2
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: "Montserrat Alternates"
+      fonts:
+        - asset: assets\fonts\MontserratAlternates-Black.ttf
+        - asset: assets\fonts\MontserratAlternates-BlackItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-Bold.ttf
+        - asset: assets\fonts\MontserratAlternates-BoldItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-ExtraBold.ttf
+        - asset: assets\fonts\MontserratAlternates-ExtraBoldItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-ExtraLight.ttf
+        - asset: assets\fonts\MontserratAlternates-ExtraLightItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-Italic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-Light.ttf
+        - asset: assets\fonts\MontserratAlternates-LightItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-Medium.ttf
+        - asset: assets\fonts\MontserratAlternates-MediumItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-Regular.ttf
+        - asset: assets\fonts\MontserratAlternates-SemiBold.ttf
+        - asset: assets\fonts\MontserratAlternates-SemiBoldItalic.ttf
+          style: italic
+        - asset: assets\fonts\MontserratAlternates-Thin.ttf
+        - asset: assets\fonts\MontserratAlternates-ThinItalic.ttf
+          style: italic
